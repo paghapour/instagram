@@ -28,6 +28,11 @@ profile= [{"_userid" : "1" ,
           "create_at" : "datetime"
           }]
 #mycol.insert_many(profile)
-dlt = {'username' : "arshia"}
-mycol.delete_one(dlt)
+"""dlt = {'username' : "arshia"}
+mycol.delete_one(dlt) """
+
+for result in mycol.find():
+    print(result)
+
+
 
