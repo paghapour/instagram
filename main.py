@@ -27,4 +27,7 @@ profile= [{"_userid" : "1" ,
           "update_at" : "datetime" ,
           "create_at" : "datetime"
           }]
-mycol.insert_many(profile)
+#mycol.insert_many(profile)
+dlt = {'username' : "arshia"}
+mycol.delete_one(dlt)
+
