@@ -1,4 +1,5 @@
 from http import client
+from os import remove
 import profile
 import pymongo
 
@@ -30,6 +31,9 @@ profile= [{"_userid" : "1" ,
 #mycol.insert_many(profile)
 """dlt = {'username' : "arshia"}
 mycol.delete_one(dlt) """
+
+dlt = remove.RemoveClass('arshia')
+mycol.delete_one(dlt)
 
 for result in mycol.find():
     print(result)
